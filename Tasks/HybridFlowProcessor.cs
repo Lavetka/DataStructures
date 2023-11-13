@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using Tasks.DoNotChange;
 
 namespace Tasks
 {
     public class HybridFlowProcessor<T> : IHybridFlowProcessor<T>
     {
+
         public T Dequeue()
         {
-            throw new NotImplementedException();
+        
         }
 
         public void Enqueue(T item)
