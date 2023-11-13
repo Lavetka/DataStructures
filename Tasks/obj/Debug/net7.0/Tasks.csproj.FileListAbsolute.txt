@@ -1,0 +1,12 @@
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/bin/Debug/net7.0/Tasks.deps.json
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/bin/Debug/net7.0/Tasks.dll
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/bin/Debug/net7.0/Tasks.pdb
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/obj/Debug/net7.0/Tasks.csproj.AssemblyReference.cache
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/obj/Debug/net7.0/Tasks.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/obj/Debug/net7.0/Tasks.AssemblyInfoInputs.cache
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/obj/Debug/net7.0/Tasks.AssemblyInfo.cs
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/obj/Debug/net7.0/Tasks.csproj.CoreCompileInputs.cache
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/obj/Debug/net7.0/Tasks.dll
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/obj/Debug/net7.0/refint/Tasks.dll
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/obj/Debug/net7.0/Tasks.pdb
+/Users/lavetos/Projects/NETMentoring/DataStructures/Tasks/obj/Debug/net7.0/ref/Tasks.dll
