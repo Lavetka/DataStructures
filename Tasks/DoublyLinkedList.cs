@@ -29,7 +29,6 @@ namespace Tasks
         {
             Node node = new Node(e);
 
-
             if (head == null)
             {
                 head = node;
