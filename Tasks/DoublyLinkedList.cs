@@ -84,17 +84,6 @@ namespace Tasks
             return GetNodeAtIndex(index).Data;
         }
 
-        public IEnumerator<T> GetEnumerator()
-        {
-            Node current = head;
-
-            while (current != null)
-            {
-                yield return current.Data;
-                current = current.Next;
-            }
-        }
-
         public void Remove(T item)
         {
             Node current = head;
@@ -119,6 +108,11 @@ namespace Tasks
             RemoveNode(nodeToRemove);
 
             return nodeToRemove.Data;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            return new DoublyLinkedListEnumerator(this);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
@@ -151,6 +145,50 @@ namespace Tasks
                 node.Next.Prev = node.Prev;
 
             Length--;
+        }
+
+        private class DoublyLinkedListEnumerator : IEnumerator<T>
+        {
+            private readonly DoublyLinkedList<T> list;
+            private Node current;
+
+            public DoublyLinkedListEnumerator(DoublyLinkedList<T> list)
+            {
+                this.list = list;
+                current = null;
+            }
+
+            public T Current
+            {
+                get
+                {
+                    if (current == null)
+                        throw new InvalidOperationException();
+                    return current.Data;
+                }
+            }
+
+            object IEnumerator.Current => Current;
+
+            public bool MoveNext()
+            {
+                if (current == null)
+                    current = list.head;
+                else
+                    current = current.Next;
+
+                return current != null;
+            }
+
+            public void Reset()
+            {
+                current = null;
+            }
+
+            public void Dispose()
+            {
+                // Dispose if needed
+            }
         }
     }
 }
